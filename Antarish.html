@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Antariksh</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="webstyle.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>Antariksh</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user"></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ClPilqPbgHzAWbXgPsla86BidLLTy3ZRzg&s" class="user-img">
+        <div>
+            <p class="bold">Astronomy club VI</p>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-calendar-event"></i>
+                    <span class="nav-item">Events</span>
+                </a>
+                <span class="tooltip">Events</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-book-open"></i>
+                    <span class="nav-item">Resources</span>
+                </a>
+                <span class="tooltip">Resources</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-compass"></i>
+                    <span class="nav-item">Beginner's Guide</span>
+                </a>
+                <span class="tooltip">Begineer's Guide</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-user"></i>
+                    <span class="nav-item">Team</span>
+                </a>
+                <span class="tooltip">Team</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-id-card"></i>
+                    <span class="nav-item">Membership</span>
+                </a>
+                <span class="tooltip">Membership</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-log-out"></i>
+                    <span class="nav-item">Log Out</span>
+                </a>
+                <span class="tooltip">Log Out</span>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Antariksh</h1>
+        </div>
+    </div>
+</body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function(){
+        sidebar.classList.toggle('active');
+    };
+</script>
+</html>
